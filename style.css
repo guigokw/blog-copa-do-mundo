@@ -1,0 +1,176 @@
+header {
+    background-color: darkblue;
+    height: 100px;
+    color: black;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    position: relative;      
+    padding: 20px;
+}
+
+body {
+    background-color: azure;
+}
+
+#inicio {
+    margin: 0;
+    text-align: center;
+}
+
+b {
+    color: green;
+}
+
+main{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#conteudo1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;                   
+    height: 400px;                     
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url(mexico-canada-eua.jpg2.webp);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;                
+    box-sizing: border-box;
+    
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#conteudo2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;                   
+    height: 400px;  
+    margin-top: -400px;                   
+    margin-left: auto;
+    margin-right: 50px;
+    background-image: url(adversarios-brasil.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;                
+    box-sizing: border-box;
+    
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.menu-btn {
+    position: absolute;     
+    left: 20px;    
+    font-size: 18px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    padding-top: 60px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); 
+    z-index: 1000; 
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.sidebar nav a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar nav a:hover {
+    background-color: #333;
+}
+
+#sedeInicio {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px
+}
+
+section {
+    text-align: center;
+}
+
+.azteca {
+    color: green;
+}
+
+p {
+    font-size: 20px;
+}
+
+#mexico {
+    font-size: 30px;
+    color: green;
+}
+
+.sublinha {
+    font-size: 15px;
+    color: gray
+}
+
+#eua {
+    font-size: 30px;
+    color: darkblue;
+}
+
+.eagle {
+    color: darkblue
+}
+
+.alce {
+    color: red;
+}
+
+#canada {
+    font-size: 30px;
+    color: red;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
