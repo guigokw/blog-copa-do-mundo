@@ -110,6 +110,12 @@ main{
     cursor: pointer;
 }
 
+.pesquisa {
+    position: absolute;
+    right: 45px;
+    top: 50px;
+}
+
 
 .sidebar nav a {
     display: block;
@@ -150,6 +156,10 @@ p {
 
 li {
     font-size: 20px
+}
+
+ol {
+    text-align: left;
 }
 
 #mexico {
@@ -194,3 +204,30 @@ img {
     color: brown
 }
 
+#escocia {
+    font-size: 30px;
+    color: blue;
+}
+
+.esco {
+    color: blue
+}
+
+#haiti {
+    color: darkred;
+    font-size: 30px;
+}
+
+.hai {
+    color:darkred
+}
+
+.data {
+    font-size: 17px;
+    color: gray;
+    text-align: left;
+}
+
+#grupo-c {
+    font-size: 30px;
+}
