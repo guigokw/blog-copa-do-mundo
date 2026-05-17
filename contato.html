@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="luiz guilherme">
+        <title> Contatos </title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <button id="open-btn" class="menu-btn">☰</button>
+            <h1 id="inicio1">CONTATO</h1>
+
+            <form class="pesquisa" action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Pesquisar no google...">
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+
+        <aside id="sidebar" class="sidebar">
+            <button id="close-btn" class="close-btn">✕ Fechar</button>
+            <nav>
+                <a href="index.html">Voltar para home</a>
+                <a href="paisesSede.html">Conheça mais sobre os países sede</a>
+                <a href="adversariosBrasil.html">Conheça os adversários do brasil nessa copa</a>
+            </nav>
+        </aside>
+
+        <div class="container-contatos">
+
+          <div class="campo-contato">
+              <img src="email-icon.png" alt="Email Icon" id="email-icon"> <br>
+              <h3 class="nome-contato1">EMAIL</h3>
+              <p class="contato-info1">Entre em contato <br> conosco pelo email: <br> deOlhoNaCopa@gmail.com</p>
+          </div>
+
+          <div class="campo-contato">
+              <img src="whatsapp-icon.png" alt="whatssap-icon" id="whatssap-icon"> <br>
+              <h3 class="nome-contato2">WHATSAPP</h3>
+              <p class="contato-info2">Entre em contato <br> conosco pelo WhatsApp: <br> (11) 99999-9999</p>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <h2 id="duvida">ALGUMA DUVIDA, MANDE-NOS UMA MENSAGEM AQUI</h2>
+
+        <form action="processa.java" method="post">
+            <label for="nome">Insira seu nome aqui:</label>
+            <input type="text" name="nome" placeholder="Seu nome" required size="50"> <br> <br>
+
+            <label for="email">Insira seu email aqui:</label>
+            <input type="email" name="email" placeholder="Seu email" required size="50"> <br> <br>
+
+            <label for="mensagem">Insira aqui sua dúvida:</label>
+            <textarea name="mensagem" placeholder="Sua mensagem" required rows="8" cols="70"></textarea> <br> <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <hr>
+
+        <footer>
+            <button class="volr-ini">^ VOLTAR AO TOPO</button>
+            <h1 class="rodape-nome">DE OLHO NA COPA</h1>
+            <a href="contato.html" class="contato">Nos contate aqui</a>
+        </footer>
+
+        <script src="script.js"></script>
+            
+    </body>

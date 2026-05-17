@@ -200,6 +200,62 @@ img {
     height: auto;
 }
 
+
+.container-contatos {
+    display: flex;        
+    justify-content: center; 
+    gap: 100px;            
+    margin-top: 50px;      
+    margin-bottom: 50px;  
+    margin-left: 100px;
+    margin-right: 100px; 
+    background-color: white;
+}
+
+
+.campo-contato {
+    max-width: 400px;      
+}
+
+#email-icon {
+    width: 75px;
+    height: 65px;
+    display: block;        
+    margin-bottom: 10px;    
+}
+
+#whatssap-icon {
+    width: 75px;
+    height: 65px;
+    display: block;         
+    margin-bottom: 10px;   
+}
+
+.nome-contato1 {
+    font-size: 20px;
+    margin: 0 0 5px 0;      
+}
+
+.contato-info1 {
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+}
+
+.nome-contato2 {
+    font-size: 20px;
+    margin: 0 0 5px 0;   
+}
+
+.contato-info2 {
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+}
+
+
+
+
 #marrocos {
     font-size: 30px;
     color:brown
@@ -245,6 +301,7 @@ footer {
     justify-content: center; 
     align-items: center;    
     position: relative; 
+    clear: both;
 }
 
 
@@ -264,4 +321,21 @@ footer {
 .rodape-nome {
     margin: 0;
     color: white;
+}
+
+.contato {
+    color: gray;
+    font-size: 15px;
+    position: absolute;
+    right: 50px;
+    bottom: 35px;
+}
+
+#duvida {
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
 }
