@@ -33,44 +33,46 @@ main{
     text-transform: uppercase;
 }
 
+.imagens-1 {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: nowrap;       
+    justify-content: center; 
+    gap: 30px;               
+    margin: 40px auto;       
+    max-width: 95%;          
+}
+
 #conteudo1 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 600px;                   
-    height: 400px;                     
-    margin-left: 50px;
-    margin-right: 50px;
     background-image: url(mexico-canada-eua.jpg2.webp);
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat;
+    width: 45%;                  
+    height: 400px;                      
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;                
     box-sizing: border-box;
-    
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);       
 }
 
 #conteudo2 {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 600px;                   
-    height: 400px;  
-    margin-top: -400px;                   
-    margin-left: auto;
-    margin-right: 50px;
     background-image: url(adversarios-brasil.jpg);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    width: 45%;                  
+    height: 400px;   
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;                
     box-sizing: border-box;
-    
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);     
 }
 
 
