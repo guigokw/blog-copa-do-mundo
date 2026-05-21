@@ -1,3 +1,4 @@
+
 header {
     background-color: #1a1a1a;
     height: 100px;
@@ -43,6 +44,8 @@ main{
     max-width: 95%;          
 }
 
+
+
 #conteudo1 {
     background-image: url(mexico-canada-eua.jpg2.webp);
     background-size: cover;       
@@ -75,6 +78,29 @@ main{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);     
 }
 
+.container-conteudo3 {
+    display: flex;
+    justify-content: center; 
+    margin: 40px 0;          
+}
+
+
+#conteudo3 {
+    background-image: url(ancelotti.jpg); 
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    width: 45%;                  
+    height: 400px;                 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;                
+    box-sizing: border-box;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 
 .menu-btn {
     position: absolute;     
@@ -87,6 +113,7 @@ main{
     cursor: pointer;
     border-radius: 5px;
 }
+
 
 
 .sidebar {
@@ -325,12 +352,18 @@ footer {
     color: white;
 }
 
-.contato {
+.bot-con {
     color: gray;
     font-size: 15px;
     position: absolute;
     right: 50px;
     bottom: 35px;
+    border: none;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
 }
 
 #duvida {
