@@ -25,9 +25,6 @@ body {
     text-align: center;
 }
 
-b {
-    color: green;
-}
 
 main{
     text-align: center;
@@ -184,13 +181,14 @@ section {
     color: green;
 }
 
+li {
+    font-size: 20px;
+}
+
 p {
     font-size: 20px;
 }
 
-li {
-    font-size: 20px
-}
 
 ol {
     text-align: left;
@@ -374,3 +372,58 @@ footer {
 form {
     text-align: center;
 }
+
+#conv {
+    font-size: 50px;
+    text-align: center;
+}      
+
+#volta-idolo {
+    font-size: 35px;
+    text-align: center;
+}
+
+#goleiro {
+    font-size: 20px;
+    color: orange;
+}
+
+#zagueiros {
+    font-size: 20px;
+    color: blue;
+}
+
+#meias {
+    font-size: 20px;
+    color: green;
+}
+
+#atacantes {
+    font-size: 20px;
+    color: red;
+}
+
+#lista-convocados {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#lista-conteudo3 {
+    display: inline-block;
+}
+
+#ausencia-joao {
+    font-size: 35px;
+    text-align: center;
+}
+
+#espera {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+
+
