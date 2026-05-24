@@ -586,19 +586,52 @@ form {
 @media screen and (max-width: 768px) {
     
     /* 1. Ajuste do Cabeçalho (Header) */
-    header {
-        flex-direction: column; /* Coloca o título, botão e busca um embaixo do outro */
-        gap: 15px;
-        padding: 15px;
+     header {
+        display: flex;
+        flex-direction: row;     /* Mantém tudo na mesma linha */
+        justify-content: space-between; /* Empurra o menu para a esquerda e a busca para a direita */
+        align-items: center;     /* Alinha todos verticalmente no centro */
+        padding: 10px 15px;
+        position: relative;
     }
     
+    /* Remove o posicionamento absoluto do botão e da busca para o flex-box alinhar */
     .menu-btn, .pesquisa {
-        position: static; /* Remove o posicionamento absoluto que travava as pontas no desktop */
-        margin: 5px 0;
+        position: static; 
+        margin: 0;
     }
     
+    /* Reduz o tamanho do título ou oculta se a tela for muito pequena para não esmagar a busca */
     header h1 {
-        font-size: 24px; /* Diminui o tamanho do título para não cortar em telas pequenas */
+        font-size: 16px;         /* Letras menores para caber na mesma linha */
+        text-align: center;
+        flex: 1;                 /* Faz o título ocupar o centro */
+        margin: 0 10px;
+    }
+
+     /* Ajuste para a caixa do formulário de pesquisa caber em telas estreitas */
+    .pesquisa input {
+        width: 100px;            /* Diminui o campo de digitação no celular */
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+     .pesquisa button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* GARANTE QUE A BARRA LATERAL ABRA DO LADO ESQUERDO */
+    .sidebar {
+        left: 0;                 /* Fixa estritamente na borda esquerda */
+        right: auto;             /* Cancela qualquer alinhamento à direita */
+        transform: translateX(-100%); /* Mantém escondida para a esquerda */
+        width: 80%;              /* No celular, ela ocupa 80% da largura da tela ao abrir */
+    }
+
+    /* Quando aberta, ela desliza para a posição 0 (tela visível) */
+    .sidebar.open {
+        transform: translateX(0);
     }
 
     /* 2. Ajuste dos Blocos de Imagem Lado a Lado (.imagens-1) */
