@@ -672,16 +672,32 @@ form {
 
     /* 5. Ajuste do Rodapé (Footer) */
     footer {
-        flex-direction: column; /* Alinha o botão de voltar, título e link em coluna */
+        display: flex;
+        flex-direction: row;          /* Força os botões a ficarem na mesma linha */
+        justify-content: space-between; /* Empurra um botão para a esquerda e o outro para a direita */
+        align-items: center;          /* Alinha os botões verticalmente no meio */
         height: auto;
-        padding: 20px;
-        gap: 15px;
+        padding: 15px 20px;           /* Espaçamento interno confortável */
     }
     
+    /* Remove o posicionamento absoluto dos botões para o Flexbox organizá-los */
     .volr-ini, .bot-con {
-        position: static; /* Libera os botões absolutos para se organizarem verticalmente */
+        position: static;
+        margin: 0;
         transform: none;
+        font-size: 12px;              /* Letras um pouco menores para caberem bem no celular */
+        padding: 8px 12px;            /* Ajusta o tamanho dos botões */
     }
+
+    /* Reduz e organiza o título do rodapé para caber no meio */
+    .rodape-nome {
+        font-size: 14px;              /* Diminui o tamanho para não esmagar os botões */
+        text-align: center;
+        flex: 1;                      /* Faz o título ocupar o centro entre os botões */
+        margin: 0 10px;
+    }
+
+
 }
 
 
