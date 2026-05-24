@@ -581,6 +581,76 @@ form {
     text-align: center; /* alinha o texto da seção de espera ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
 }
 
+/* ajuste para telas de celular e tablet */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Ajuste do Cabeçalho (Header) */
+    header {
+        flex-direction: column; /* Coloca o título, botão e busca um embaixo do outro */
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .menu-btn, .pesquisa {
+        position: static; /* Remove o posicionamento absoluto que travava as pontas no desktop */
+        margin: 5px 0;
+    }
+    
+    header h1 {
+        font-size: 24px; /* Diminui o tamanho do título para não cortar em telas pequenas */
+    }
+
+    /* 2. Ajuste dos Blocos de Imagem Lado a Lado (.imagens-1) */
+    .imagens-1 {
+        flex-direction: column; /* MUDANÇA CHAVE: força as duas fotos a ficarem uma embaixo da outra */
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Força os cards 1 e 2 a alargarem na tela do celular */
+    #conteudo1, #conteudo2 {
+        width: 90%;       /* Ocupa quase toda a largura da tela do celular */
+        height: 300px;    /* Reduz levemente a altura para não ocupar a tela inteira do celular */
+    }
+
+    /* 3. Ajuste do Bloco 3 (Ancelotti / Convocação) */
+    #conteudo3 {
+        width: 90%;       /* Ocupa o mesmo tamanho simétrico dos de cima no celular */
+        height: 300px;
+    }
+
+    /* 4. Ajuste da Seção de Contatos (E-mail e WhatsApp) */
+    .container-contatos {
+        flex-direction: column; /* Coloca o e-mail em cima e o WhatsApp embaixo */
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    
+    .campo-contato {
+        max-width: 90%;
+        text-align: center; /* Centraliza o texto das informações embaixo dos ícones no celular */
+    }
+    
+    #email-icon, #whatssap-icon {
+        margin: 0 auto 10px auto; /* Centraliza as imagens dos ícones em seus respectivos blocos */
+    }
+
+    /* 5. Ajuste do Rodapé (Footer) */
+    footer {
+        flex-direction: column; /* Alinha o botão de voltar, título e link em coluna */
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .volr-ini, .bot-con {
+        position: static; /* Libera os botões absolutos para se organizarem verticalmente */
+        transform: none;
+    }
+}
+
 
 
 
