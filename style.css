@@ -1,724 +1,387 @@
-
 header {
-    background-color: #1a1a1a; /* cor de fundo preta do acbeçalho */
+    background-color: #1a1a1a; /* fundo escuro do cabeçalho para contraste com o texto */
 
-    height: 100px; /* define a altura do cabeçalho */
+    height: 100px; /* altura fixa do cabeçalho */
 
-    color: white; /* cor do texto branca */
+    color: white; /* cor do texto no cabeçalho */
 
-    padding-top: 50px; /* adiciona um espaçamento superior para centralizar o texto verticalmente */
+    padding-top: 50px; /* empurra conteúdo para baixo, ajustando alinhamento */
 
-    display: flex; /* usa flexbox para centralizar o conteúdo */
+    display: flex; /* usa flexbox para posicionar itens facilmente */
 
-    justify-content: center;   /*  centraliza horizontalmente */
+    justify-content: center;   /* centraliza itens horizontalmente */
 
-    align-items: center;  /* centraliza verticalmente */   
+    align-items: center;  /* centraliza itens verticalmente */
 
-    position: relative;   /* permite posicionamento absoluto dos elementos dentro do cabeçalho */    
+    position: relative;   /* serve como referência para elementos posicionados dentro */
 
-    padding: 20px; /* adiciona um espaçamento interno para evitar que o conteúdo fique colado nas bordas */
+    padding: 20px; /* espaçamento interno geral */
 }
 
 body {
-    background-color: whitesmoke; /* cor de fundo do corpo da página */
+    background-color: whitesmoke; /* fundo claro do site */
 }
 
 #inicio1 {
-    margin: 0; /* remove a margem padrão do elemento */
+    margin: 0; /* remove margem padrão */
 
-    text-align: center; /* centraliza o texto horizontalmente */
+    text-align: center; /* centraliza conteúdo do elemento */
 }
 
 #inicio2 {
-    margin: 0; /* remove a margem padrão do elemento */
+    margin: 0; /* remove margem padrão */
 
-    text-align: center; /* centraliza o texto horizontalmente */
+    text-align: center; /* centraliza conteúdo do elemento */
 }
 
 main{
-    text-align: center; /* centraliza o conteúdo dentro do elemento main */
+    text-align: center; /* centraliza o conteúdo principal */
 
-    text-transform: uppercase; /* transforma o texto em letras maiúsculas */
+    text-transform: uppercase; /* deixa títulos/itens em caixa alta */
 }
 
 .imagens-1 {
-    display: flex; /*  habilita o layout flexbox para o contêiner */
+    display: flex; /* contêiner flex para alinhar imagens */
 
-    flex-direction: row;  /*  alinha os itens em uma linha horizontal */  
+    flex-direction: row;  /* itens alinhados horizontalmente */
 
-    flex-wrap: nowrap;   /*  impede que os itens quebrem para a próxima linha, mantendo-os em uma única linha */   
+    flex-wrap: nowrap;   /* evita quebra de linha entre itens */
 
-    justify-content: center; /*  centraliza os itens horizontalmente dentro do contêiner */
+    justify-content: center; /* centraliza as imagens */
 
-    gap: 30px;        /*  adiciona um espaço de 30 pixels entre os itens, criando uma separação visual entre eles */   
+    gap: 30px;        /* espaço entre as imagens */
 
-    margin: 40px auto;   /*  adiciona uma margem de 40 pixels na parte superior e inferior do contêiner, e centraliza o contêiner horizontalmente dentro do elemento pai */   
+    margin: 40px auto;   /* separação vertical e centralização do bloco */
 
-    max-width: 95%; /*  define uma largura máxima de 95% do elemento pai para o contêiner, garantindo que ele não ultrapasse essa largura mesmo em telas maiores */         
+    max-width: 95%; /* limita largura relativa ao pai */
 }
-
 
 #conteudo1 {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), 
-                      url(mexico-canada-eua.jpg2.webp); /* define a imagem de fundo para o elemento com o ID "conteudo1", usando uma combinação de um gradiente linear para criar um efeito de sobreposição escura na parte inferior da imagem, e a imagem real do México, Canadá e EUA como plano de fundo, o que ajuda a melhorar a legibilidade do texto sobreposto à imagem, especialmente em áreas mais claras da imagem, criando um contraste visual que torna o texto mais fácil de ler, além de adicionar um toque estético ao design geral da página */
+                      url(mexico-canada-eua.jpg2.webp); /* imagem de fundo com gradiente para melhorar legibilidade */
 
-    background-size: cover; /* faz com que a imagem de fundo cubra toda a área do elemento, ajustando-se proporcionalmente para evitar distorções */   
+    background-size: cover; /* cobre totalmente o bloco sem distorcer */
 
-    background-position: center; /* centraliza a imagem de fundo dentro do elemento, garantindo que o ponto central da imagem esteja alinhado com o centro do elemento */  
+    background-position: center; /* mantém a parte central da imagem visível */
 
-    background-repeat: no-repeat; /* impede que a imagem de fundo se repita, garantindo que ela seja exibida apenas uma vez dentro do elemento */
+    background-repeat: no-repeat; /* evita repetição da imagem */
 
-    width: 45%;  /* define a largura do elemento como 45% do seu elemento pai, permitindo que ele ocupe menos da metade da largura disponível, o que é útil para criar um layout equilibrado quando combinado com outros elementos de largura semelhante */ 
+    width: 45%;  /* ocupa 45% da largura do pai */
 
-    height: 400px; /* define a altura do elemento como 400 pixels, garantindo que ele tenha uma altura fixa, o que é importante para manter a consistência visual e garantir que o conteúdo dentro do elemento seja exibido corretamente, independentemente do tamanho da tela ou do conteúdo específico */     
+    height: 400px; /* altura fixa para consistência visual */
 
-    color: white; /* define a cor do texto dentro do elemento como branca, garantindo que o texto seja legível e se destaque contra a imagem de fundo, especialmente se a imagem tiver áreas escuras ou coloridas */
+    color: white; /* cor do texto sobre a imagem */
 
-    display: flex; /* habilita o layout flexbox para o elemento, permitindo que os itens dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do elemento */
+    display: flex; /* flex para alinhar o conteúdo interno */
 
-    flex-direction: column; /* define a direção dos itens dentro do elemento como coluna, o que significa que os itens serão empilhados verticalmente, um abaixo do outro, em vez de serem alinhados horizontalmente, o que é útil para criar uma estrutura de layout mais organizada e fácil de ler, especialmente quando combinado com outras propriedades de flexbox para controle adicional sobre o alinhamento e a distribuição dos itens dentro do elemento */
+    flex-direction: column; /* empilha itens verticalmente */
 
-    justify-content: flex-end; /* alinha os itens dentro do elemento ao final do eixo principal (neste caso, o eixo vertical devido à direção da coluna), o que significa que os itens serão empurrados para a parte inferior do elemento, criando um efeito visual onde o conteúdo parece estar "ancorado" na parte inferior da imagem de fundo, o que pode ser esteticamente agradável e ajudar a destacar o conteúdo em relação à imagem de fundo */
+    justify-content: flex-end; /* posiciona conteúdo próximo à base da imagem */
 
-    padding: 20px;  /* adiciona um espaçamento interno de 20 pixels em todos os lados do elemento, garantindo que o conteúdo dentro do elemento tenha um espaço adequado em relação às bordas do elemento, o que melhora a legibilidade e a estética geral do layout, especialmente quando combinado com a imagem de fundo para criar um contraste visual agradável entre o conteúdo e a imagem */   
+    padding: 20px;  /* espaçamento interno */
 
-    box-sizing: border-box; /* altera o modelo de caixa do elemento para incluir o padding e a borda dentro das dimensões totais do elemento, garantindo que a largura e a altura definidas para o elemento sejam as dimensões totais, incluindo o conteúdo, o padding e a borda, o que facilita o controle do layout e evita problemas de dimensionamento inesperados, especialmente quando combinado com outras propriedades de layout como flexbox para criar um design responsivo e consistente */
+    box-sizing: border-box; /* padding incluído nas dimensões */
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);   /* adiciona uma sombra ao texto dentro do elemento, com um deslocamento de 2 pixels para a direita e 2 pixels para baixo, um desfoque de 4 pixels e uma cor de sombra preta com opacidade de 0.8, o que ajuda a melhorar a legibilidade do texto contra a imagem de fundo, criando um contraste visual que torna o texto mais fácil de ler, especialmente em áreas da imagem que podem ser mais claras ou coloridas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);   /* sombra para melhorar contraste do texto */
 }
 
 #conteudo2 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), url(selecao-brasileira.jpg); /* define a imagem de fundo para o elemento com o ID "conteudo2", usando uma combinação de um gradiente linear para criar um efeito de sobreposição escura na parte inferior da imagem, e a imagem real da seleção brasileira como plano de fundo, o que ajuda a melhorar a legibilidade do texto sobreposto à imagem, especialmente em áreas mais claras da imagem, criando um contraste visual que torna o texto mais fácil de ler, além de adicionar um toque estético ao design geral da página */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), url(selecao-brasileira.jpg); /* imagem de fundo com overlay para texto */
 
-    background-size: cover; /* faz com que a imagem de fundo cubra toda a área do elemento, ajustando-se proporcionalmente para evitar distorções */
+    background-size: cover; /* cobre totalmente o bloco */
 
-    background-position: center;   /* centraliza a imagem de fundo dentro do elemento, garantindo que o ponto central da imagem esteja alinhado com o centro do elemento */
+    background-position: center;   /* centraliza a imagem */
 
-    background-repeat: no-repeat; /* impede que a imagem de fundo se repita, garantindo que ela seja exibida apenas uma vez dentro do elemento */
+    background-repeat: no-repeat; /* evita repetição */
 
-    width: 45%;  /* define a largura do elemento como 45% do seu elemento pai, permitindo que ele ocupe menos da metade da largura disponível, o que é útil para criar um layout equilibrado quando combinado com outros elementos de largura semelhante */
+    width: 45%;  /* ocupa 45% da largura do pai */
 
-    height: 400px; /* define a altura do elemento como 400 pixels, garantindo que ele tenha uma altura fixa, o que é importante para manter a consistência visual e garantir que o conteúdo dentro do elemento seja exibido corretamente, independentemente do tamanho da tela ou do conteúdo específico */
+    height: 400px; /* altura fixa */
 
-    color: white; /* define a cor do texto dentro do elemento como branca, garantindo que o texto seja legível e se destaque contra a imagem de fundo, especialmente se a imagem tiver áreas escuras ou coloridas */
+    color: white; /* texto sobreposto */
 
-    display: flex; /* habilita o layout flexbox para o elemento, permitindo que os itens dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do elemento */
+    display: flex; /* flex para alinhamento interno */
 
-    flex-direction: column; /* define a direção dos itens dentro do elemento como coluna, o que significa que os itens serão empilhados verticalmente, um abaixo do outro, em vez de serem alinhados horizontalmente, o que é útil para criar uma estrutura de layout mais organizada e fácil de ler, especialmente quando combinado com outras propriedades de flexbox para controle adicional sobre o alinhamento e a distribuição dos itens dentro do elemento */
+    flex-direction: column; /* empilha conteúdo */
 
-    justify-content: flex-end; /* alinha os itens dentro do elemento ao final do eixo principal (neste caso, o eixo vertical devido à direção da coluna), o que significa que os itens serão empurrados para a parte inferior do elemento, criando um efeito visual onde o conteúdo parece estar "ancorado" na parte inferior da imagem de fundo, o que pode ser esteticamente agradável e ajudar a destacar o conteúdo em relação à imagem de fundo */
+    justify-content: flex-end; /* posiciona conteúdo na base */
 
-    padding: 20px;  /* adiciona um espaçamento interno de 20 pixels em todos os lados do elemento, garantindo que o conteúdo dentro do elemento tenha um espaço adequado em relação às bordas do elemento, o que melhora a legibilidade e a estética geral do layout, especialmente quando combinado com a imagem de fundo para criar um contraste visual agradável entre o conteúdo e a imagem */
+    padding: 20px;  /* espaçamento interno */
 
-    box-sizing: border-box; /* altera o modelo de caixa do elemento para incluir o padding e a borda dentro das dimensões totais do elemento, garantindo que a largura e a altura definidas para o elemento sejam as dimensões totais, incluindo o conteúdo, o padding e a borda, o que facilita o controle do layout e evita problemas de dimensionamento inesperados, especialmente quando combinado com outras propriedades de layout como flexbox para criar um design responsivo e consistente */
+    box-sizing: border-box; /* inclui padding nas dimensões */
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* adiciona uma sombra ao texto dentro do elemento, com um deslocamento de 2 pixels para a direita e 2 pixels para baixo, um desfoque de 4 pixels e uma cor de sombra preta com opacidade de 0.8, o que ajuda a melhorar a legibilidade do texto contra a imagem de fundo, criando um contraste visual que torna o texto mais fácil de ler, especialmente em áreas da imagem que podem ser mais claras ou coloridas */     
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* sombra para texto legível */     
 }
 
 .container-conteudo3 {
-    display: flex; /* habilita o layout flexbox para o contêiner que envolve o elemento com o ID "conteudo3", permitindo que os itens dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do contêiner */
+    display: flex; /* contêiner flex para centralizar o bloco #conteudo3 */
 
-    justify-content: center; /* centraliza os itens horizontalmente dentro do contêiner, garantindo que o elemento com o ID "conteudo3" esteja alinhado no centro do contêiner, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente quando combinado com outras propriedades de layout como flexbox para controle adicional sobre o alinhamento e a distribuição dos itens dentro do contêiner */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
 
-    margin: 40px 0; /* adiciona uma margem de 40 pixels na parte superior e inferior do contêiner, criando um espaçamento visual entre o contêiner e outros elementos na página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo */         
+    margin: 40px 0; /* separação vertical entre seções */         
 }
-
 
 #conteudo3 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), url(ancelotti.jpg);  /* define a imagem de fundo para o elemento com o ID "conteudo3", usando uma combinação de um gradiente linear para criar um efeito de sobreposição escura na parte inferior da imagem, e a imagem real do técnico Ancelotti como plano de fundo, o que ajuda a melhorar a legibilidade do texto sobreposto à imagem, especialmente em áreas mais claras da imagem, criando um contraste visual que torna o texto mais fácil de ler, além de adicionar um toque estético ao design geral da página */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), url(ancelotti.jpg);  /* imagem de fundo com overlay para melhor leitura */
 
-    background-size: cover;  /* faz com que a imagem de fundo cubra toda a área do elemento, ajustando-se proporcionalmente para evitar distorções */
+    background-size: cover;  /* cobre totalmente o bloco */
 
-    background-position: center; /* centraliza a imagem de fundo dentro do elemento, garantindo que o ponto central da imagem esteja alinhado com o centro do elemento */
+    background-position: center; /* mantém foco central da imagem */
 
-    background-repeat: no-repeat; /* impede que a imagem de fundo se repita, garantindo que ela seja exibida apenas uma vez dentro do elemento */
+    background-repeat: no-repeat; /* sem repetição */
 
-    width: 45%;  /* define a largura do elemento como 45% do seu elemento pai, permitindo que ele ocupe menos da metade da largura disponível, o que é útil para criar um layout equilibrado quando combinado com outros elementos de largura semelhante */
+    width: 45%;  /* largura relativa ao contêiner pai */
 
-    height: 400px; /* define a altura do elemento como 400 pixels, garantindo que ele tenha uma altura fixa, o que é importante para manter a consistência visual e garantir que o conteúdo dentro do elemento seja exibido corretamente, independentemente do tamanho da tela ou do conteúdo específico */
+    height: 400px; /* altura fixa para consistência */
 
-    color: white; /* define a cor do texto dentro do elemento como branca, garantindo que o texto seja legível e se destaque contra a imagem de fundo, especialmente se a imagem tiver áreas escuras ou coloridas */
+    color: white; /* cor do texto sobre a imagem */
 
-    display: flex; /* habilita o layout flexbox para o elemento, permitindo que os itens dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do elemento */
+    display: flex; /* flex para posicionar conteúdo interno */
 
-    flex-direction: column; /* define a direção dos itens dentro do elemento como coluna, o que significa que os itens serão empilhados verticalmente, um abaixo do outro, em vez de serem alinhados horizontalmente, o que é útil para criar uma estrutura de layout mais organizada e fácil de ler, especialmente quando combinado com outras propriedades de flexbox para controle adicional sobre o alinhamento e a distribuição dos itens dentro do elemento */
+    flex-direction: column; /* empilha elementos verticalmente */
 
-    justify-content: flex-end; /* alinha os itens dentro do elemento ao final do eixo principal (neste caso, o eixo vertical devido à direção da coluna), o que significa que os itens serão empurrados para a parte inferior do elemento, criando um efeito visual onde o conteúdo parece estar "ancorado" na parte inferior da imagem de fundo, o que pode ser esteticamente agradável e ajudar a destacar o conteúdo em relação à imagem de fundo */
+    justify-content: flex-end; /* alinha conteúdo na base */
 
-    padding: 20px; /* adiciona um espaçamento interno de 20 pixels em todos os lados do elemento, garantindo que o conteúdo dentro do elemento tenha um espaço adequado em relação às bordas do elemento, o que melhora a legibilidade e a estética geral do layout, especialmente quando combinado com a imagem de fundo para criar um contraste visual agradável entre o conteúdo e a imagem */
+    padding: 20px; /* espaçamento interno */
 
-    box-sizing: border-box; /* altera o modelo de caixa do elemento para incluir o padding e a borda dentro das dimensões totais do elemento, garantindo que a largura e a altura definidas para o elemento sejam as dimensões totais, incluindo o conteúdo, o padding e a borda, o que facilita o controle do layout e evita problemas de dimensionamento inesperados, especialmente quando combinado com outras propriedades de layout como flexbox para criar um design responsivo e consistente */
+    box-sizing: border-box; /* inclui padding nas dimensões */
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* adiciona uma sombra ao texto dentro do elemento, com um deslocamento de 2 pixels para a direita e 2 pixels para baixo, um desfoque de 4 pixels e uma cor de sombra preta com opacidade de 0.8, o que ajuda a melhorar a legibilidade do texto contra a imagem de fundo, criando um contraste visual que torna o texto mais fácil de ler, especialmente em áreas da imagem que podem ser mais claras ou coloridas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* melhora legibilidade do texto */
 }
-
 
 .menu-btn {
-    position: absolute; /* permite que o botão seja posicionado de forma absoluta dentro do cabeçalho, permitindo que ele fique sobreposto ao conteúdo do cabeçalho e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    position: absolute; /* fixa botão dentro do cabeçalho */
 
-    left: 20px;  /* posiciona o botão a 20 pixels da borda esquerda do cabeçalho, garantindo que ele esteja alinhado de forma consistente e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    left: 20px;  /* distância da borda esquerda */
 
-    font-size: 18px; /* define o tamanho da fonte do texto dentro do botão como 18 pixels, garantindo que o texto seja legível e se destaque contra o fundo do cabeçalho, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 18px; /* tamanho do rótulo do botão */
 
-    background: #222; /* define a cor de fundo do botão como um tom escuro de cinza, garantindo que ele se destaque contra o fundo do cabeçalho e seja facilmente identificável como um elemento interativo para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    background: #222; /* fundo para destaque */
 
-    color: white; /* define a cor do texto dentro do botão como branca, garantindo que o texto seja legível e se destaque contra o fundo escuro do botão, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: white; /* rótulo em branco */
 
-    border: none; /* remove a borda padrão do botão, garantindo que ele tenha um visual mais limpo e moderno, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    border: none; /* aparência limpa */
 
-    padding: 10px 15px; /* adiciona um espaçamento interno de 10 pixels na parte superior e inferior do botão, e 15 pixels nas laterais, garantindo que o botão tenha um tamanho adequado para ser facilmente clicável e legível, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    padding: 10px 15px; /* área clicável confortável */
 
-    cursor: pointer; /* altera o cursor para um ponteiro quando o usuário passa o mouse sobre o botão, indicando que ele é um elemento interativo e pode ser clicado, o que melhora a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    cursor: pointer; /* indica ação clicável */
 
-    border-radius: 5px; /* adiciona bordas arredondadas ao botão, com um raio de 5 pixels, o que melhora a estética do botão e o torna mais agradável visualmente, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    border-radius: 5px; /* cantos levemente arredondados */
 }
 
-
 .sidebar {
-    position: fixed; /* permite que a barra lateral seja posicionada de forma fixa, garantindo que ela esteja sempre visível para os usuários, independentemente do quanto eles rolem a página, o que é especialmente útil para fornecer acesso rápido a links de navegação ou outras informações importantes, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    position: fixed; /* barra lateral fixa no viewport */
 
-    top: 0; /* posiciona a barra lateral no topo da página, garantindo que ela esteja alinhada com o topo do viewport e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    top: 0; /* alinhada ao topo */
 
-    left: 0; /* posiciona a barra lateral na borda esquerda da página, garantindo que ela esteja alinhada com a borda esquerda do viewport e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    left: 0; /* ancorada à esquerda */
 
-    width: 250px; /* define a largura da barra lateral como 250 pixels, garantindo que ela tenha um tamanho adequado para conter links de navegação ou outras informações importantes, sem ocupar muito espaço na tela, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    width: 250px; /* largura padrão da sidebar */
 
-    height: 100%; /* define a altura da barra lateral como 100% do viewport, garantindo que ela se estenda por toda a altura da página, o que é especialmente útil para fornecer acesso rápido a links de navegação ou outras informações importantes, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    height: 100%; /* ocupa toda a altura */
 
-    background-color: #1a1a1a; /* define a cor de fundo da barra lateral como um tom escuro de cinza, garantindo que ela se destaque contra o fundo da página e seja facilmente identificável como um elemento de navegação para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    background-color: #1a1a1a; /* fundo escuro */
 
-    padding-top: 60px; /* adiciona um espaçamento superior de 60 pixels à barra lateral, garantindo que o conteúdo dentro dela não fique colado ao topo da página, o que melhora a estética e a legibilidade do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    padding-top: 60px; /* espaço para evitar sobreposição com header */
 
-    transition: transform 0.3s ease; /* adiciona uma transição suave para a propriedade de transformação da barra lateral, com uma duração de 0.3 segundos e uma função de tempo "ease", o que melhora a experiência do usuário ao abrir e fechar a barra lateral, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    transition: transform 0.3s ease; /* animação de entrada/saída */
 
-    transform: translateX(-100%); /* inicialmente, a barra lateral é posicionada fora da tela, movendo-a 100% para a esquerda, o que garante que ela não seja visível para os usuários até que seja aberta, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    transform: translateX(-100%); /* começa escondida fora da tela */
 
-    z-index: 1000; /* define um índice z alto para a barra lateral, garantindo que ela fique sobreposta a outros elementos da página quando aberta, o que é especialmente útil para fornecer acesso rápido a links de navegação ou outras informações importantes, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    z-index: 1000; /* fica acima do restante */
 }
 
 .sidebar.open {
-    transform: translateX(0); /* quando a classe "open" é adicionada à barra lateral, ela é movida para a posição original (0), tornando-a visível para os usuários, o que melhora a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    transform: translateX(0); /* mostra a barra lateral quando aberta */
 }
 
 .close-btn {
-    position: absolute; /* permite que o botão seja posicionado de forma absoluta dentro da barra lateral, garantindo que ele fique sobreposto ao conteúdo da barra lateral e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    position: absolute; /* botão de fechar posicionado dentro da sidebar */
 
-    top: 15px; /* posiciona o botão a 15 pixels da borda superior da barra lateral, garantindo que ele esteja alinhado de forma consistente e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    top: 15px; /* distância do topo */
 
-    right: 15px; /* posiciona o botão a 15 pixels da borda direita da barra lateral, garantindo que ele esteja alinhado de forma consistente e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    right: 15px; /* distância da direita */
 
-    background: none; /* remove a cor de fundo do botão, garantindo que ele tenha um visual mais limpo e moderno, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    background: none; /* aparência mínima */
 
-    color: white; /* define a cor do texto dentro do botão como branca, garantindo que o texto seja legível e se destaque contra o fundo escuro da barra lateral, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: white; /* contraste com o fundo */
 
-    border: none; /* remove a borda padrão do botão, garantindo que ele tenha um visual mais limpo e moderno, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    border: none; /* sem borda */
 
-    font-size: 20px; /* define o tamanho da fonte do texto dentro do botão como 20 pixels, garantindo que o texto seja legível e se destaque contra o fundo escuro da barra lateral, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 20px; /* legível e acessível */
 
-    cursor: pointer; /* altera o cursor para um ponteiro quando o usuário passa o mouse sobre o botão, indicando que ele é um elemento interativo e pode ser clicado, o que melhora a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    cursor: pointer; /* indica ação clicável */
 }
 
 .pesquisa {
-    position: absolute; /* permite que a seção de pesquisa seja posicionada de forma absoluta dentro do cabeçalho, garantindo que ela fique sobreposta ao conteúdo do cabeçalho e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    position: absolute; /* posicionamento fixo no header */
 
-    right: 45px;    /* posiciona a seção de pesquisa a 45 pixels da borda direita do cabeçalho, garantindo que ela esteja alinhada de forma consistente e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    right: 45px;    /* distância da borda direita */
 
-    top: 50px;  /* posiciona a seção de pesquisa a 50 pixels da borda superior do cabeçalho, garantindo que ela esteja alinhada de forma consistente e seja facilmente acessível para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    top: 50px;  /* distância do topo */
 }
 
-
 .sidebar nav a {
-    display: block; /* exibe os links de navegação como blocos, garantindo que eles ocupem toda a largura disponível na barra lateral, tornando-os mais fáceis de clicar e legíveis para os usuários, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    display: block; /* cada link ocupa linha inteira */
 
-    padding: 15px 25px; /* adiciona um espaçamento interno de 15 pixels na parte superior e inferior dos links, e 25 pixels nas laterais, garantindo que os links tenham um tamanho adequado para serem facilmente clicáveis e legíveis, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    padding: 15px 25px; /* área clicável confortável */
 
-    color: #fff; /* define a cor do texto dos links de navegação como branca, garantindo que eles sejam legíveis e se destaquem contra o fundo escuro da barra lateral, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: #fff; /* cor do texto */
 
-    text-decoration: none; /* remove a decoração de texto padrão dos links, como sublinhado, garantindo que eles tenham um visual mais limpo e moderno, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    text-decoration: none; /* remove sublinhado padrão */
 
-    font-family: Arial, sans-serif; /* define a família de fontes dos links de navegação como Arial, com uma fonte de fallback sans-serif, garantindo que os links tenham um estilo de fonte consistente e legível, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-family: Arial, sans-serif; /* fonte legível para menus */
 
-    border-bottom: 1px solid #333; /* adiciona uma borda inferior de 1 pixel de espessura e cor #333 (um tom escuro de cinza) aos links de navegação, criando uma separação visual entre os links e melhorando a estética geral da barra lateral, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    border-bottom: 1px solid #333; /* separador visual entre links */
 }
 
 .sidebar nav a:hover {
-    background-color: #333; /* altera a cor de fundo dos links de navegação para #333 (um tom escuro de cinza) quando o usuário passa o mouse sobre eles, criando um efeito de destaque visual que indica que os links são interativos e podem ser clicados, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um menu de navegação compacto é necessário para melhorar a usabilidade e a experiência do usuário */
+    background-color: #333; /* destaque ao passar o mouse */
 }
 
 #sedeInicio {
-    text-align: center; /* centraliza o texto do título da página, garantindo que ele esteja alinhado no centro da página, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    text-align: center; /* centraliza o título da seção */
 
-    margin-top: 20px; /* adiciona uma margem superior de 20 pixels ao título da página, criando um espaçamento visual entre o título e outros elementos na parte superior da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-top: 20px; /* separação do topo */
 
-    font-size: 50px /* define o tamanho da fonte do título da página como 50 pixels, garantindo que ele seja grande o suficiente para se destacar como o elemento principal da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 50px /* tamanho grande para destaque */
 }
 
 #adversarios-brasil {
-    text-align: center; /* centraliza o texto da seção de adversários do Brasil, garantindo que ele esteja alinhado no centro da página, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    text-align: center; /* centraliza o título da seção */
 
-    margin-top: 20px; /* adiciona uma margem superior de 20 pixels à seção de adversários do Brasil, criando um espaçamento visual entre a seção e outros elementos na parte superior da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-top: 20px; /* separação superior */
 
-    font-size: 50px /* define o tamanho da fonte da seção de adversários do Brasil como 50 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 50px /* tamanho grande para destaque */
 }
 
 section {
-    text-align: center; /* centraliza o texto das seções de adversários individuais, garantindo que ele esteja alinhado no centro da página, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    text-align: center; /* centraliza o conteúdo das seções */
 }
 
 .azteca {
-    color: green; /* define a cor do texto dos títulos das seções de adversários individuais como verde, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: green; /* cor usada para indicar México/Azteca */
 }
 
 li {
-    font-size: 20px; /* define o tamanho da fonte dos itens de lista como 20 pixels, garantindo que eles sejam legíveis e se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 20px; /* tamanho padrão dos itens de lista */
 }
 
 p {
-    font-size: 20px; /* define o tamanho da fonte dos parágrafos como 20 pixels, garantindo que eles sejam legíveis e se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 20px; /* tamanho legível para parágrafos */
 }
 
 ol {
-    text-align: left; /* alinha o texto das listas ordenadas à esquerda, garantindo que ele seja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    text-align: left; /* listas ordenadas alinhadas à esquerda para leitura */
 }
 
 #mexico {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 30px; /* tamanho do título da seção México */
 
-    color: green; /* define a cor do texto da seção de adversários individuais como verde, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: green; /* cor associada à seção */
 }
 
-
 .sublinha {
-    font-size: 15px; /* define o tamanho da fonte dos títulos das seções de adversários individuais como 15 pixels, garantindo que eles sejam legíveis e se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 15px; /* subtítulo com destaque menor */
 
-    color: gray /* define a cor do texto dos títulos das seções de adversários individuais como cinza, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: gray /* cor menos chamativa */
 }
 
 #eua {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 30px; /* tamanho do título EUA */
 
-    color: darkblue; /* define a cor do texto da seção de adversários individuais como azul escuro, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: darkblue; /* cor associada à seção EUA */
 }
-
 
 .eagle {
-    color: darkblue /* define a cor do texto dos títulos das seções de adversários individuais como azul escuro, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: darkblue /* cor usada para o grupo/EUA */
 }
-
 
 .alce {
-    color: red; /* define a cor do texto da seção de adversários individuais como vermelho, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: red; /* cor usada para Canadá/Alce */
 }
-
 
 #canada {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 30px; /* tamanho do título Canadá */
 
-    color: red; /* define a cor do texto da seção de adversários individuais como vermelho, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: red; /* cor associada à seção Canadá */
 }
-
 
 img {
-    width: 500px; /* define a largura das imagens como 500 pixels, garantindo que elas tenham um tamanho consistente e adequado para se destacar como elementos visuais importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    width: 500px; /* largura fixa para imagens principais */
 
-    height: auto; /* mantém a proporção original das imagens, garantindo que elas não sejam distorcidas e se mantenham visualmente agradáveis, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    height: auto; /* mantém proporção natural */
 }
-
 
 .container-contatos {
-    display: flex; /* habilita o layout flexbox para o contêiner que envolve os elementos de contato, permitindo que os itens dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do contêiner */
+    display: flex; /* contêiner flex para contatos */
 
-    justify-content: center;  /* centraliza os itens horizontalmente dentro do contêiner, garantindo que os elementos de contato estejam alinhados no centro do contêiner, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    justify-content: center;  /* centraliza cartões/itens de contato */
 
-    gap: 100px;  /* adiciona um espaçamento de 100 pixels entre os itens dentro do contêiner, garantindo que os elementos de contato tenham um espaço adequado entre eles, o que melhora a estética e a legibilidade do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    gap: 100px;  /* espaço entre contatos */
 
-    margin-top: 50px;  /* adiciona uma margem superior de 50 pixels ao contêiner, criando um espaçamento visual entre o contêiner e outros elementos na parte superior da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-top: 50px;  /* separação superior */
 
-    margin-bottom: 50px;  /* adiciona uma margem inferior de 50 pixels ao contêiner, criando um espaçamento visual entre o contêiner e outros elementos na parte inferior da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-bottom: 50px;  /* separação inferior */
 
-    margin-left: 100px; /* adiciona uma margem esquerda de 100 pixels ao contêiner, criando um espaçamento visual entre o contêiner e outros elementos na parte esquerda da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-left: 100px; /* margem esquerda */
 
-    margin-right: 100px; /* adiciona uma margem direita de 100 pixels ao contêiner, criando um espaçamento visual entre o contêiner e outros elementos na parte direita da página, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin-right: 100px; /* margem direita */
 
-    background-color: white; /* define a cor de fundo do contêiner como branca, garantindo que os elementos de contato se destaquem contra o fundo da página e sejam facilmente legíveis, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    background-color: white; /* fundo claro para a área de contato */
 }
 
-
 .campo-contato {
-    max-width: 400px;    /* define a largura máxima dos campos de contato como 400 pixels, garantindo que eles tenham um tamanho consistente e adequado para serem facilmente legíveis e interativos, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */  
+    max-width: 400px;    /* largura máxima dos campos de formulário */  
 }
 
 #email-icon {
-    width: 75px; /* define a largura do ícone de email como 75 pixels, garantindo que ele tenha um tamanho consistente e adequado para se destacar como um elemento visual importante da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    width: 75px; /* largura do ícone de email */
 
-    height: 65px; /* define a altura do ícone de email como 65 pixels, garantindo que ele tenha um tamanho consistente e adequado para se destacar como um elemento visual importante da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    height: 65px; /* altura do ícone */
 
-    display: block; /* define o ícone de email como um elemento de bloco, garantindo que ele ocupe toda a largura disponível e seja exibido em uma nova linha, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    display: block; /* garante quebra de linha antes/depois do ícone */
 
-    margin-bottom: 10px;  /* adiciona uma margem inferior de 10 pixels ao ícone de email, criando um espaçamento visual entre o ícone e os elementos de texto abaixo dele, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */  
+    margin-bottom: 10px;  /* espaçamento para o texto abaixo */  
 }
 
 #whatssap-icon {
-    width: 75px; /* define a largura do ícone de WhatsApp como 75 pixels, garantindo que ele tenha um tamanho consistente e adequado para se destacar como um elemento visual importante da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    width: 75px; /* largura do ícone do WhatsApp */
 
-    height: 65px; /* define a altura do ícone de WhatsApp como 65 pixels, garantindo que ele tenha um tamanho consistente e adequado para se destacar como um elemento visual importante da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    height: 65px; /* altura do ícone */
 
-    display: block;  /* define o ícone de WhatsApp como um elemento de bloco, garantindo que ele ocupe toda a largura disponível e seja exibido em uma nova linha, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    display: block;  /* garante comportamento em bloco */
 
-    margin-bottom: 10px; /* adiciona uma margem inferior de 10 pixels ao ícone de WhatsApp, criando um espaçamento visual entre o ícone e os elementos de texto abaixo dele, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */  
+    margin-bottom: 10px; /* espaçamento para elementos seguintes */  
 }
 
 .nome-contato1 {
-    font-size: 20px; /* define o tamanho da fonte dos nomes de contato como 20 pixels, garantindo que eles sejam legíveis e se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 20px; /* tamanho do nome de contato */
 
-    margin: 0 0 5px 0; /* define a margem dos nomes de contato como 0 pixels na parte superior, 0 pixels na parte direita, 5 pixels na parte inferior e 0 pixels na parte esquerda, criando um espaçamento visual entre os nomes de contato e os elementos de texto abaixo deles, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */     
+    margin: 0 0 5px 0; /* pequena margem inferior */     
 }
 
 .contato-info1 {
-    font-size: 16px; /* define o tamanho da fonte das informações de contato como 16 pixels, garantindo que elas sejam legíveis e se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 16px; /* tamanho das informações de contato */
 
-    color: gray; /* define a cor do texto das informações de contato como cinza, garantindo que elas se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: gray; /* tom neutro para detalhes */
 
-    margin: 0; /* define a margem das informações de contato como 0 pixels em todas as direções, garantindo que elas estejam alinhadas de forma consistente e não tenham espaçamento adicional, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin: 0; /* remove margem padrão */
 }
 
 .nome-contato2 {
-    font-size: 20px; /* define o tamanho da fonte dos nomes de contato como 20 pixels, garantindo que eles sejam legíveis e se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 20px; /* tamanho do nome de contato */
 
-    margin: 0 0 5px 0;    /* define a margem dos nomes de contato como 0 pixels na parte superior, 0 pixels na parte direita, 5 pixels na parte inferior e 0 pixels na parte esquerda, criando um espaçamento visual entre os nomes de contato e os elementos de texto abaixo deles, o que ajuda a melhorar a estética geral do layout e a separar visualmente as diferentes seções do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin: 0 0 5px 0;    /* pequena margem inferior */
 }
 
 .contato-info2 {
-    font-size: 16px; /* define o tamanho da fonte das informações de contato como 16 pixels, garantindo que elas sejam legíveis e se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    font-size: 16px; /* tamanho das informações de contato */
 
-    color: gray; /* define a cor do texto das informações de contato como cinza, garantindo que elas se destaquem como elementos importantes da seção de contato, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    color: gray; /* tom neutro */
 
-    margin: 0; /* define a margem das informações de contato como 0 pixels em todas as direções, garantindo que elas estejam alinhadas de forma consistente e não tenham espaçamento adicional, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
+    margin: 0; /* remove margem padrão */
 }
- 
-
-
-
-
-#marrocos {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color:brown /* define a cor do texto da seção de adversários individuais como marrom, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.marro {
-    color: brown /* define a cor do texto dos títulos das seções de adversários individuais como marrom, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#escocia {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: blue; /* define a cor do texto da seção de adversários individuais como azul, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.esco {
-    color: blue /* define a cor do texto dos títulos das seções de adversários individuais como azul, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#haiti {
-    color: darkred; /* define a cor do texto da seção de adversários individuais como vermelho escuro, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.hai {
-    color:darkred /* define a cor do texto dos títulos das seções de adversários individuais como vermelho escuro, garantindo que eles se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.data {
-    font-size: 17px; /* define o tamanho da fonte das datas como 17 pixels, garantindo que elas sejam legíveis e se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: gray; /* define a cor do texto das datas como cinza, garantindo que elas se destaquem como elementos importantes da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: left; /* alinha o texto das datas à esquerda, garantindo que elas estejam alinhadas de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#grupo-c {
-    font-size: 30px; /* define o tamanho da fonte da seção de adversários individuais como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-footer {
-    background-color: #1a1a1a; /* define a cor de fundo do rodapé como #1a1a1a, um tom escuro de cinza, garantindo que o rodapé se destaque como uma seção distinta da página e forneça um contraste visual adequado para os elementos de texto e botões dentro dele, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: white; /* define a cor do texto do rodapé como branca, garantindo que ele seja legível e se destaque contra o fundo escuro do rodapé, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    height: 100px; /* define a altura do rodapé como 100 pixels, garantindo que ele tenha um tamanho consistente e adequado para conter os elementos de texto e botões dentro dele, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    display: flex; /* habilita o layout flexbox para o rodapé, permitindo que os elementos dentro dele sejam organizados de maneira flexível e responsiva, facilitando o alinhamento e a distribuição do conteúdo dentro do rodapé */
-
-    justify-content: center; /* centraliza os itens horizontalmente dentro do rodapé, garantindo que os elementos de texto e botões estejam alinhados no centro do rodapé, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    align-items: center;   /* alinha os itens verticalmente dentro do rodapé, garantindo que os elementos de texto e botões estejam alinhados no centro do rodapé, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    position: relative; /* define a posição do rodapé como relativa, permitindo que os elementos dentro dele sejam posicionados de forma absoluta em relação ao rodapé, o que é útil para criar um layout mais flexível e responsivo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    clear: both; /* garante que o rodapé seja posicionado abaixo de quaisquer elementos flutuantes anteriores, evitando que ele se sobreponha a outros conteúdos na página, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-
-.volr-ini {
-    position: absolute; /* define a posição do botão de voltar ao início como absoluta, permitindo que ele seja posicionado de forma precisa em relação ao rodapé, o que é útil para criar um layout mais flexível e responsivo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    top: 50%;      /* posiciona o botão de voltar ao início verticalmente no centro do rodapé, garantindo que ele esteja alinhado de forma consistente e fácil de acessar para os usuários, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */   
-
-    transform: translateY(-50%); /* ajusta a posição do botão de voltar ao início para que ele esteja perfeitamente centralizado verticalmente no rodapé, garantindo que ele esteja alinhado de forma consistente e fácil de acessar para os usuários, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    left: 45px; /* posiciona o botão de voltar ao início a 45 pixels da borda esquerda do rodapé, garantindo que ele esteja alinhado de forma consistente e fácil de acessar para os usuários, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: white; /* define a cor do texto do botão de voltar ao início como branca, garantindo que ele seja legível e se destaque contra o fundo escuro do rodapé, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    background-color: gray; /* define a cor de fundo do botão de voltar ao início como cinza, garantindo que ele se destaque contra o fundo escuro do rodapé e seja facilmente identificável como um elemento interativo, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    border: none; /* remove a borda do botão de voltar ao início, garantindo que ele tenha um visual mais limpo e moderno, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    padding: 10px 15px; /* adiciona um preenchimento de 10 pixels na parte superior e inferior e 15 pixels na parte esquerda e direita do botão de voltar ao início, garantindo que ele tenha um tamanho adequado para ser facilmente clicável e interativo, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    cursor: pointer; /* define o cursor como pointer quando o mouse estiver sobre o botão de voltar ao início, indicando que ele é um elemento interativo e pode ser clicado, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    border-radius: 5px; /* adiciona um raio de borda de 5 pixels ao botão de voltar ao início, garantindo que ele tenha cantos arredondados e um visual mais suave, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.rodape-nome {
-    margin: 0; /* define a margem do nome no rodapé como 0 pixels em todas as direções, garantindo que ele esteja alinhado de forma consistente e não tenha espaçamento adicional, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: white; /* define a cor do texto do nome no rodapé como branca, garantindo que ele seja legível e se destaque contra o fundo escuro do rodapé, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-.bot-con {
-    color: gray; /* define a cor do texto do botão de convocação como cinza, garantindo que ele se destaque contra o fundo do rodapé e seja facilmente identificável como um elemento interativo, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    font-size: 15px; /* define o tamanho da fonte do botão de convocação como 15 pixels, garantindo que ele seja legível e se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    position: absolute; /* define a posição do botão de convocação como absoluta, permitindo que ele seja posicionado de forma precisa em relação ao rodapé, o que é útil para criar um layout mais flexível e responsivo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    right: 50px; /* posiciona o botão de convocação a 50 pixels da borda direita do rodapé, garantindo que ele esteja alinhado de forma consistente e fácil de acessar para os usuários, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    bottom: 35px; /* posiciona o botão de convocação a 35 pixels da borda inferior do rodapé, garantindo que ele esteja alinhado de forma consistente e fácil de acessar para os usuários, o que é especialmente útil para criar um layout equilibrado e esteticamente agradável, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    border: none; /* remove a borda do botão de convocação, garantindo que ele tenha um visual mais limpo e moderno, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    background-color: gray; /* define a cor de fundo do botão de convocação como cinza, garantindo que ele se destaque contra o fundo do rodapé e seja facilmente identificável como um elemento interativo, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    cursor: pointer; /* define o cursor como pointer quando o mouse estiver sobre o botão de convocação, indicando que ele é um elemento interativo e pode ser clicado, melhorando a usabilidade e a experiência do usuário, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    border-radius: 5px; /* adiciona um raio de borda de 5 pixels ao botão de convocação, garantindo que ele tenha cantos arredondados e um visual mais suave, o que melhora a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: white; /* define a cor do texto do botão de convocação como branca, garantindo que ele seja legível e se destaque contra o fundo cinza do botão, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    padding: 10px 15px; /* adiciona um preenchimento de 10 pixels na parte superior e inferior e 15 pixels na parte esquerda e direita do botão de convocação, garantindo que ele tenha um tamanho adequado para ser facilmente clicável e interativo, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#duvida {
-    font-size: 30px; /* define o tamanho da fonte da seção de dúvidas como 30 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: center; /* alinha o texto da seção de dúvidas ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-form {
-    text-align: center; /* alinha o conteúdo do formulário ao centro, garantindo que os campos de entrada e o botão de envio estejam alinhados de forma consistente e fácil de acessar para os usuários, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#conv {
-    font-size: 50px; /* define o tamanho da fonte da seção de convocação como 50 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: center; /* alinha o texto da seção de convocação ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}      
-
-#volta-idolo {
-    font-size: 35px; /* define o tamanho da fonte da seção de volta do ídolo como 35 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: center; /* alinha o texto da seção de volta do ídolo ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#goleiro {
-    font-size: 20px; /* define o tamanho da fonte da seção de goleiros como 20 pixels, garantindo que ela seja legível e se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: orange; /* define a cor do texto da seção de goleiros como laranja, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#zagueiros {
-    font-size: 20px; /* define o tamanho da fonte da seção de zagueiros como 20 pixels, garantindo que ela seja legível e se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: blue; /* define a cor do texto da seção de zagueiros como azul, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#meias {
-    font-size: 20px; /* define o tamanho da fonte da seção de meias como 20 pixels, garantindo que ela seja legível e se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: green; /* define a cor do texto da seção de meias como verde, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#atacantes {
-    font-size: 20px; /* define o tamanho da fonte da seção de atacantes como 20 pixels, garantindo que ela seja legível e se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    color: red; /* define a cor do texto da seção de atacantes como vermelho, garantindo que ela se destaque como um elemento importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#lista-convocados {
-    font-size: 35px; /* define o tamanho da fonte da seção de lista de convocados como 35 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: center; /* alinha o texto da seção de lista de convocados ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-
-#lista-conteudo3 {
-    display: inline-block; /* define a exibição da seção de conteúdo da lista de convocados como inline-block, permitindo que ela seja exibida em linha com outros elementos, mas ainda mantenha suas próprias características de bloco, o que é útil para criar um layout mais flexível e responsivo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#ausencia-joao {
-    font-size: 35px; /* define o tamanho da fonte da seção de ausência do jogador João como 35 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-
-    text-align: center; /* alinha o texto da seção de ausência do jogador João ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-#espera {
-    font-size: 35px; /* define o tamanho da fonte da seção de espera como 35 pixels, garantindo que ela seja grande o suficiente para se destacar como uma seção importante da página, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-    text-align: center; /* alinha o texto da seção de espera ao centro, garantindo que ele esteja alinhado de forma consistente e fácil de ler, melhorando a estética e a hierarquia visual do conteúdo, especialmente em dispositivos móveis onde o espaço é limitado e um layout claro e organizado é necessário para melhorar a usabilidade e a experiência do usuário */
-}
-
-/* ajuste para telas de celular e tablet */
-
-@media screen and (max-width: 768px) {
-    
-    /* 1. Ajuste do Cabeçalho (Header) */
-     header {
-        display: flex;
-        flex-direction: row;     /* Mantém tudo na mesma linha */
-        justify-content: space-between; /* Empurra o menu para a esquerda e a busca para a direita */
-        align-items: center;     /* Alinha todos verticalmente no centro */
-        padding: 10px 15px;
-        position: relative;
-    }
-    
-    /* Remove o posicionamento absoluto do botão e da busca para o flex-box alinhar */
-    .menu-btn, .pesquisa {
-        position: static; 
-        margin: 0;
-    }
-    
-    /* Reduz o tamanho do título ou oculta se a tela for muito pequena para não esmagar a busca */
-    header h1 {
-        font-size: 16px;         /* Letras menores para caber na mesma linha */
-        text-align: center;
-        flex: 1;                 /* Faz o título ocupar o centro */
-        margin: 0 10px;
-    }
-
-     /* Ajuste para a caixa do formulário de pesquisa caber em telas estreitas */
-    .pesquisa input {
-        width: 100px;            /* Diminui o campo de digitação no celular */
-        padding: 6px 8px;
-        font-size: 12px;
-    }
-
-     .pesquisa button {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-
-    /* GARANTE QUE A BARRA LATERAL ABRA DO LADO ESQUERDO */
-    .sidebar {
-        left: 0;                 /* Fixa estritamente na borda esquerda */
-        right: auto;             /* Cancela qualquer alinhamento à direita */
-        transform: translateX(-100%); /* Mantém escondida para a esquerda */
-        width: 80%;              /* No celular, ela ocupa 80% da largura da tela ao abrir */
-    }
-
-    /* Quando aberta, ela desliza para a posição 0 (tela visível) */
-    .sidebar.open {
-        transform: translateX(0);
-    }
-
-    /* 2. Ajuste dos Blocos de Imagem Lado a Lado (.imagens-1) */
-    .imagens-1 {
-        flex-direction: column; /* MUDANÇA CHAVE: força as duas fotos a ficarem uma embaixo da outra */
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* Força os cards 1 e 2 a alargarem na tela do celular */
-    #conteudo1, #conteudo2 {
-        width: 90%;       /* Ocupa quase toda a largura da tela do celular */
-        height: 300px;    /* Reduz levemente a altura para não ocupar a tela inteira do celular */
-    }
-
-    /* 3. Ajuste do Bloco 3 (Ancelotti / Convocação) */
-    #conteudo3 {
-        width: 90%;       /* Ocupa o mesmo tamanho simétrico dos de cima no celular */
-        height: 300px;
-    }
-
-    /* 4. Ajuste da Seção de Contatos (E-mail e WhatsApp) */
-    .container-contatos {
-        flex-direction: column; /* Coloca o e-mail em cima e o WhatsApp embaixo */
-        align-items: center;
-        gap: 40px;
-        margin-top: 30px;
-    }
-    
-    .campo-contato {
-        max-width: 90%;
-        text-align: center; /* Centraliza o texto das informações embaixo dos ícones no celular */
-    }
-    
-    #email-icon, #whatssap-icon {
-        margin: 0 auto 10px auto; /* Centraliza as imagens dos ícones em seus respectivos blocos */
-    }
-
-    /* 5. Ajuste do Rodapé (Footer) */
-    footer {
-        display: flex;
-        flex-direction: row;          /* Força os botões a ficarem na mesma linha */
-        justify-content: space-between; /* Empurra um botão para a esquerda e o outro para a direita */
-        align-items: center;          /* Alinha os botões verticalmente no meio */
-        height: auto;
-        padding: 15px 20px;           /* Espaçamento interno confortável */
-    }
-    
-    /* Remove o posicionamento absoluto dos botões para o Flexbox organizá-los */
-    .volr-ini, .bot-con {
-        position: static;
-        margin: 0;
-        transform: none;
-        font-size: 12px;              /* Letras um pouco menores para caberem bem no celular */
-        padding: 8px 12px;            /* Ajusta o tamanho dos botões */
-    }
-
-    /* Reduz e organiza o título do rodapé para caber no meio */
-    .rodape-nome {
-        font-size: 14px;              /* Diminui o tamanho para não esmagar os botões */
-        text-align: center;
-        flex: 1;                      /* Faz o título ocupar o centro entre os botões */
-        margin: 0 10px;
-    }
-
-     /* 6. Ajuste dos textos dentro dos cards de imagem no Mobile */
-    #conteudo1 h2, #conteudo2 h2, #conteudo3 h2 {
-        font-size: 16px;         /* Diminui o título para não quebrar em muitas linhas */
-        margin-bottom: 8px;      /* Deixa um espaço menor entre o título e o parágrafo */
-        line-height: 1.3;        /* Ajusta o espaçamento entre as linhas do título */
-    }
-
-    #conteudo1 p, #conteudo2 p, #conteudo3 p {
-        font-size: 12px;         /* Deixa a descrição menor e muito mais legível no celular */
-        line-height: 1.4;        
-        margin: 0;
-    }
-
-    /* Reduz levemente o recuo interno dos cards para sobrar mais espaço para as letras */
-    #conteudo1, #conteudo2, #conteudo3 {
-        padding: 15px;           
-    }
-
-
-}
-
-
 
 
 
